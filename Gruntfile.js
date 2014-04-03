@@ -371,6 +371,12 @@ module.exports = function (grunt) {
         configFile: 'karma.conf.js',
         singleRun: true
       }
+    },
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
 
@@ -420,9 +426,16 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
+  grunt.registerTask('deploy', [
+    'build',
+    'gh-pages'
+  ]);
+
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
     'build'
   ]);
+
+  grunt.loadNpmTasks('grunt-gh-pages');
 };

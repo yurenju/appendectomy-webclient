@@ -2,7 +2,7 @@
 
 ## 安裝
 
-請先裝 node 跟 npm，我建議使用 [nvm][1] 安裝，安裝完畢後，請先裝 grunt 跟 bower：
+請先裝 node.js 跟 [compass][2]，node.js 我建議使用 [nvm][1] 安裝，安裝完畢後，請先裝 grunt 跟 bower：
 ```sh
 npm i -g grunt-cli bower
 ```
@@ -18,4 +18,10 @@ npm i && bower i
 grunt serve
 ```
 
+如果你想要 deploy 到你自己的 github.io，可以用
+```sh
+grunt deploy
+```
+
   [1]: https://github.com/creationix/nvm
+  [2]: http://compass-style.org/install/

@@ -5,7 +5,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ng-bootstrap3-datepicker'
   ])
   .config(function ($routeProvider) {
     $routeProvider

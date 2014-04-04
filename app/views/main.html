@@ -7,53 +7,53 @@
 </div>
 <div class="container" role="main">
   <h1>公職人員罷免提議</h1>
-  <form class="form-horizontal" role="form">
+  <form class="form-horizontal" role="form" action="http://www.uisltsc.com.tw/appendectomy/proposal.php" method="post" target="_blank">
     <div class="form-group">
-      <label for="inputName" class="col-sm-2 control-label">姓名</label>
+      <label for="Name_0" class="col-sm-2 control-label">姓名</label>
       <div class="col-sm-10">
-            <input type="text" class="form-control" name="inputName">
+            <input type="text" class="form-control" name="Name_0">
       </div>
     </div>
     <div class="form-group">
-      <label for="inputId" class="col-sm-2 control-label">身分證字號</label>
+      <label for="IDNo_0" class="col-sm-2 control-label">身分證字號</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="inputId">
+        <input type="text" class="form-control" name="IDNo_0">
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-2 control-label">性別</div>
       <div class="col-sm-10">
         <label class="radio-inline">
-          <input type="radio" name="optionGender" value="male" checked>
+          <input type="radio" name="Sex_0" value="男" checked>
           男
         </label>
         <label class="radio-inline">
-          <input type="radio" name="optionGender" value="female" checked>
+          <input type="radio" name="Sex_0" value="女" checked>
           女
         </label>
       </div>
     </div>
     <div class="form-group">
-      <label for="inputOccupation" class="col-sm-2 control-label">職業</label>
+      <label for="Occupation_0" class="col-sm-2 control-label">職業</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="inputOccupation">
+        <input type="text" class="form-control" name="Occupation_0">
       </div>
     </div>
     <div class="form-group">
-      <label for="inputRegAddr" class="col-sm-2 control-label">戶籍地址</label>
+      <label for="RegAdd_0" class="col-sm-2 control-label">戶籍地址</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="inputRegAddr">
+        <input type="text" class="form-control" name="RegAdd_0">
       </div>
     </div>
     <div class="form-group">
-      <label for="inputBirthday" class="col-sm-2 control-label">生日</label>
+      <label for="Birthday_0" class="col-sm-2 control-label">生日</label>
       <div class="col-sm-10">
-        <datepicker ng-model="date" language="en" date-format="YYYY-MM-DD">
+        <datepicker name="Birthday_0" ng-model="date" language="en" date-format="YYYY-MM-DD">
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="button" class="btn btn-primary">下載提案書 PDF</button>
+        <button type="submit" class="btn btn-primary">下載提案書 PDF</button>
         <button type="button" class="btn btn-primary">上傳到 ibon</button>
       </div>
     </div>
